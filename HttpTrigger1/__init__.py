@@ -6,9 +6,9 @@ import azure.functions as func
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    a = 100
+    a = 200
     b = 200
-    calucu = str(a + b)
+    calucu = str(a * b)
     name = req.params.get('name')
     if not name:
         try:
