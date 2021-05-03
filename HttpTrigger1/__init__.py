@@ -4,7 +4,7 @@ import azure.functions as func
 
 
 def main(req: func.HttpRequest, msg: func.Out[func.QueueMessage]) -> str:
-
+    
     name = req.params.get('name')
     if not name:
         try:
